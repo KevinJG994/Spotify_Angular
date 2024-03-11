@@ -1,6 +1,7 @@
 import { Component , OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
+
 @Component({
   selector: 'app-side-bar',
   templateUrl: './side-bar.component.html',
@@ -21,7 +22,7 @@ export class SideBarComponent implements OnInit {
       {
         name: 'Home',
         icon: 'uil uil-estate',
-        router: ['/'] //localhost:4100/
+        router: ['/', 'auth'] //localhost:4100/
       },
       {
         name: 'Buscar',

@@ -8,4 +8,10 @@ export class AuthService {
 
 
   constructor() { }
+
+  public sendCredentials(email: string, password: string): void {
+
+  }
+
+
 }
