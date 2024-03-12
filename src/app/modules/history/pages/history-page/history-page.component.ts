@@ -1,12 +1,25 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { TrackModel } from '@core/models/tracks.model';
+
+import { Observable, of } from 'rxjs';
+import { SearchService } from '../../services/search.service';
 
 @Component({
   selector: 'app-history-page',
-  standalone: true,
-  imports: [],
   templateUrl: './history-page.component.html',
-  styleUrl: './history-page.component.css'
+  styleUrls: ['./history-page.component.css']
 })
-export class HistoryPageComponent {
+export class HistoryPageComponent implements OnInit {
+  listResults$: Observable<any> = of([])
+  constructor(private searchService: SearchService) { }
 
+  ngOnInit(): void {
+  }
+
+  receiveData(event: string): void {
+    //TODO: agarras el termino y sabes que solo se ejecuta cunado tiene 3 caracters
+    console.log('🎁 Estoy en el padre jua jua...', event);
+    this.listResults$ = this.searchService.searchTracks$(event)
+
+  }
 }

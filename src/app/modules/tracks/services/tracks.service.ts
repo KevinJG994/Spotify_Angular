@@ -1,4 +1,4 @@
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { TrackModel } from '@core/models/tracks.model';
 import { Observable, catchError, map, mergeMap, of } from 'rxjs';
@@ -30,7 +30,9 @@ export class TracksService {
    */
 
   getAllTracks$(): Observable<any> {
-    return this.http.get(`${this.URL}/tracks`)
+    return this.http.get(`${this.URL}/tracks`, {
+      headers: new HttpHeaders({ authorization: 'Bearer TOKEN' })
+    })
     .pipe(
       map(({data}: any) => {
         return data
@@ -45,7 +47,9 @@ export class TracksService {
 
 
   getAllRandom$(): Observable<any> {
-    return this.http.get(`${this.URL}/tracks`)
+    return this.http.get(`${this.URL}/tracks`, {
+      headers: new HttpHeaders({ authorization: 'Bearer TOKEN' })
+    })
       .pipe(
         mergeMap(({ data }: any) => this.skipById(data, 2)),
         // map((dataRevertida) => { //TODO aplicar un filter comun de array
