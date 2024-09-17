@@ -1,34 +1,29 @@
-# Spotify
+![GitHub repo size](https://img.shields.io/github/repo-size/KevinJG994/Spotify_Angular
+)
+![GitHub last commit](https://img.shields.io/github/last-commit/KevinJG994/Spotify_Angular
+)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.2.3.
+# Spotify Clone 🎧<img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/Angular_full_color_logo.svg" alt="Angular Logo" width="40" style="margin-right: 10px;"/>
+Este repositorio contiene una réplica básica de la plataforma Spotify, desarrollada con Angular como frontend y conectada a una API externa para obtener datos de canciones, artistas, álbumes y más. 🎶
 
-## Development server
+## Características 🚀
+- 🔍 Obtener datos de artistas, canciones, imágenes y sonido desde una API externa.
+- 📻 Reproducir de canciones.
+- ⏯️ Pausar/reanudar canciones.
+- ⏩ Adelantar o ⏪ atrasar las canciones durante la reproducción.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+ ## Instalación 📦 
+Sigue estos pasos para instalar y ejecutar el proyecto:
 
-## Code scaffolding
+1. **🛠️ Instalar Dependencias de Node:** <br>
+   `npm install`
+   
+2. **<img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/Angular_full_color_logo.svg" alt="Angular Logo" width="20" style="margin-right: 10px;"/> Instalar Angular CLI** <br>
+   `npm install -g @angular/cli`
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+3. **🚀 Arrancar el Proyecto:** <br>
+   `ng serve`
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-
-
+## Demo 📽️
 
 https://github.com/user-attachments/assets/469a079a-9374-4f19-9537-23a68950e0e2
-
-
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
